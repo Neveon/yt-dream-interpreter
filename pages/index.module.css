@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+@font-face {
+  font-family: "ColfaxAI";
+  src: url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff2)
+      format("woff2"),
+    url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ColfaxAI";
+  src: url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff2) format("woff2"),
+    url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+.main,
+.main input,
+.main textarea {
+  font-size: 16px;
+  line-height: 24px;
+  color: #353740;
+  font-family: "ColfaxAI", Helvetica, sans-serif;
+}
+.main .result {
+  color: white;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+.main .icon {
+  width: 34px;
+}
+
+.main form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 200%;
+  align-items: center;
+}
+.main textarea {
+  border: 1px solid #007bff;
+  border-radius: 4px;
+}
+.main ::placeholder {
+  color: #8e8ea0;
+  opacity: 1;
+}
+.main input[type="submit"] {
+  padding: 12px 0;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.main .result {
+  font-weight: bold;
+  margin-top: 40px;
+  height: 800px;
+  width: 800px;
+}
+
+.main h3 {
+  font-size: calc(20px + 10vh);
+  line-height: calc(20px + 10vh);
+  text-shadow: 0 0 5px #008cff, 0 0 15px #008cff, 0 0 20px #008cff, 0 0 40px #008cff, 0 0 60px #086abb, 0 0 10px #008cff, 0 0 98px #086abb;
+    color: #00a2ff;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #008cff, 0 0 15px #008cff, 0 0 20px #008cff, 0 0 40px #008cff, 0 0 60px #086abb, 0 0 10px #008cff, 0 0 98px #086abb;
+    color: #00a2ff;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #008cff, 0 0 15px #008cff, 0 0 20px #008cff, 0 0 40px #008cff, 0 0 60px #086abb, 0 0 10px #008cff, 0 0 98px #086abb;
+    color: #00a2ff;
+  }
+}
+
+.main {
+  background-color: #111;
+  padding-bottom: 100%;
+}
